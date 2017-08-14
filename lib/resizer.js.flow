@@ -1,0 +1,35 @@
+// @flow
+
+import React from "react";
+declare class Class0 extends SyntheticUIEvent<> {
+
+  altKey: boolean;
+  button: number;
+  buttons: number;
+  clientX: number;
+  clientY: number;
+  ctrlKey: boolean;
+  getModifierState: any;
+  metaKey: boolean;
+  pageX: number;
+  pageY: number;
+  relatedTarget: EventTarget;
+  screenX: number;
+  screenY: number;
+  shiftKey: boolean;
+}
+declare class Class1 extends SyntheticUIEvent<> {
+
+  altKey: boolean;
+  changedTouches: any;
+  ctrlKey: boolean;
+  getModifierState: any;
+  metaKey: boolean;
+  shiftKey: boolean;
+  targetTouches: any;
+  touches: any;
+}
+export type Direction = "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft";
+export type OnStartCallback = (e: Class0 | Class1, dir: "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft") => void;
+export type Props = {className?: string, direction: "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft", onResizeStart: (e: Class0 | Class1, dir: "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft") => void, replaceStyles?: any};
+declare export default function(props: {className?: string, direction: "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft", onResizeStart: (e: Class0 | Class1, dir: "top" | "right" | "bottom" | "left" | "topRight" | "bottomRight" | "bottomLeft" | "topLeft") => void, replaceStyles?: any}): React$Element<{className?: string, onMouseDown: (e: Class0) => void, onTouchStart: (e: Class1) => void, style: {bottom: string, cursor: string, height: string, left: string, position: string, right: string, top: string, width: string}}>;
