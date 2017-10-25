@@ -281,14 +281,19 @@ export default class Resizable extends React.Component<ResizableProps, State> {
     if (this.props.onResizeStart) {
       this.props.onResizeStart(event, direction, (this.resizable: React.ElementRef<'div'>));
     }
+    const width = this.size.width;
+    const height = this.size.height;
     this.setState({
       original: {
         x: clientX,
         y: clientY,
-        width: this.size.width,
-        height: this.size.height,
+        width,
+        height,
       },
-      isResizing: true,
+      // Setup state with current width/height (sizeStyle will return state when
+      // not resizing)
+      width,
+      height,
       direction,
     });
   }
