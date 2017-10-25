@@ -222,6 +222,16 @@ class YourComponent extends Component {
 }
 ```
 
+
+## Contribute
+
+If you have a feature request, please add it as an issue or make a pull request.
+
+If you have a bug to report, please reproduce the bug in [WebpackBin](
+https://www.webpackbin.com/bins/-Kvnrpd3GSG6-z0tpgH_) to help us easily isolate it.
+
+
+
 ## Test
 
 ``` sh
@@ -235,7 +245,16 @@ npm test
 
 ## Changelog
 
-#### v4.0.0-beta.0
+#### v4.0.2
+
+- Fix using right click on resize #152
+- Add workaround when base Node not found.
+
+#### v4.0.1
+
+- Update index.d.ts, Fixes #153
+
+#### v4.0.0
 
 - Remove `width` and `height`.
 - Add `defaultSize` and `size`,
